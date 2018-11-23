@@ -1,0 +1,106 @@
+Metadata
+Sections
+groutping contents
+
+Sections:
+1.body
+2.article
+3.section
+4.nav
+5.aside
+6.h1,h2...h6
+7.header
+8.footer
+9.address
+10.Headings and sections
+		-Creating an OUTLINE***
+11.Summary
+
+/#############################################/
+<body>
+- The body element represents the content of the document
+- there is only one body element
+
+/#############################################/
+<article>
+article elelment represents
+	- a complete/self contained independently distributable / shared
+
+Eg:Forum post, magazine, newspaper article, blog entry, widgets
+Note:
+When article elements are nested, the inner article elements represent
+articles that are in principle related to the contents of the outer article
+
+Eg:A blog entry which is an article accepts user comments. The comment section
+could be an inner article since the comments involves long posts
+/#############################################/
+<section>
+Represents generic section of the document or application
+A thematic grouping of elements
+Theme of each section should be identified typically including header
+
+Note:
+section element is not a generic container element
+the section element is appropriate only if the element's contents would be
+listed explicitly in the document's outline.
+Eg:	chapters in a story
+		tabbed pages
+
+
+
+/#############################################/
+<nav>
+represents section of the page that links to other pages or to parts
+within the page
+
+Note:
+- Use list markup <ul> if the nav elements respresents a list
+-	It is common for footers to have a short list of links to various pages of a site,
+	such as the terms of service, the home page, and a copyright page
+	Footer element is alone sufficient for such cases
+- Nav element helps user agents such as screen readers which help blind users
+	to understand/view available pages and navigate across them
+
+Inference:
+Use nav markup section when the links inside them helps to navigate around the application (primary)
+as well it can navigate around the page/aritcle (secondary nav)
+
+/#############################################/
+<aside>
+Represents the section of the page that is tangentially related to the content
+around(article) the aside element.which would be considered seperate from the content
+
+
+
+
+
+
+
+
+
+
+
+
+/#############################################/
+
+What is inter-element whitespace?
+	The space characters are always allowed between elements
+	User agents represent these(space char) characters between elements in the
+source markup as Text nodes in the DOM
+  Empty Text nodes and Text nodes consisting of just sequences of those(space) characters
+are considered inter-element whitespace.
+
+<p>(inter-element-white space introduced after close tag'>')
+paragrapht content
+</p>
+<p>paragraph content coming right after the close tag '>' with no new line</p>
+The above p tag does not have inter-element-white space
+
+this can be achieved also through
+<p
+	>paragraph content</p>
+
+why?
+sometimes elements behave differently when inter-element-white space is introduced
+eg. <div class='inline-block'></div>
+Hence watch for those

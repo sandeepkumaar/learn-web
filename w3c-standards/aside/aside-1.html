@@ -1,0 +1,100 @@
+<!-- sample 1 -->
+<aside>
+  <h1>Switzerland</h1>
+  <p>Switzerland, a land-locked country in the middle of geographic Europe, has not joined the geopolitical European Union, though it is a signatory to a number of European treaties.</p>
+</aside>
+
+<hr style='margin-top:40px;margin-bottom:40px;'>
+<!-- sample 2 -->
+<!-- <p> tag enclosing the phrasing content   -->
+<p>He later joined a large company, continuing on the same work.
+  <q>I love my job. People ask me what I do for fun when I'm not at
+work. But I'm paid to do my hobby, so I never know what to
+answer. Some people wonder what they would do if they didn't have to
+work... but I know what I would do, because I was unemployed for a
+year, and I filled that time doing exactly what I do now.</q></p>
+
+<!-- takeway of that article -->
+<aside>
+  <q> People ask me what I do for fun when I'm not at work. But I'm
+ paid to do my hobby, so I never know what to answer. </q>
+</aside>
+
+<p>Of course his work — or should that be hobby? — isn't his only passion. He also enjoys other pleasures.</p>
+
+
+<hr style='margin-top:40px;margin-bottom:40px;'>
+<!-- sample 3 -->
+
+<header>
+  <h1>My wonderful blog</h1>
+  <p>My tagline</p>
+</header>
+<aside>
+  <!-- this aside contains two sections that are tangentially related
+  to the page, namely, links to other blogs, and links to blog posts
+  from this blog -->
+  <nav>
+    <h1>My blogroll</h1>
+    <ul>
+      <li><a href="http://blog.example.com/">Example Blog</a>
+    </ul>
+  </nav>
+  <nav>
+    <h1>Archives</h1>
+    <ol reversed>
+      <li><a href="/last-post">My last post</a>
+        <li><a href="/first-post">My first post</a>
+    </ol>
+  </nav>
+</aside>
+<aside>
+  <!-- this aside is tangentially related to the page also, it
+  contains twitter messages from the blog author -->
+  <h1>Twitter Feed</h1>
+  <blockquote cite="http://twitter.example.net/t31351234">
+    I'm on vacation, writing my blog.
+  </blockquote>
+  <blockquote cite="http://twitter.example.net/t31219752">
+    I'm going to go on vacation soon.
+  </blockquote>
+</aside>
+<article>
+  <!-- this is a blog post -->
+  <h1>My last post</h1>
+  <p>This is my last post.</p>
+  <footer>
+    <p><a href="/last-post" rel=bookmark>Permalink</a>
+  </footer>
+</article>
+<article>
+  <!-- this is also a blog post -->
+  <h1>My first post</h1>
+  <p>This is my first post.</p>
+  <aside>
+    <!-- this aside is about the blog post, since it's inside the
+   <article> element; it would be wrong, for instance, to put the
+   blogroll here, since the blogroll isn't really related to this post
+   specifically, only to the page as a whole -->
+    <h1>Posting</h1>
+    <p>While I'm thinking about it, I wanted to say something about posting. Posting is fun!</p>
+  </aside>
+  <footer>
+    <p><a href="/first-post" rel=bookmark>Permalink</a>
+  </footer>
+</article>
+<footer>
+  <!-- not advised to markup the links by <nav> tag -->
+  <nav>
+    <a href="/archives">Archives</a> —
+    <a href="/about">About me</a> —
+    <a href="/copyright">Copyright</a>
+  </nav>
+</footer>
+
+<!--
+Notes:
+<aside>
+Represents the section of the page that is tangentially related to the content
+around(article) the aside element.which would be considered seperate from the content
+-->

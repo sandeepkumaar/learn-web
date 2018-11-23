@@ -1,0 +1,139 @@
+<body itemscope itemtype="http://schema.org/Blog">
+  <!-- Document with header / main / footer  -->
+  <header>
+    <h1>Wake up sheeple!</h1>
+    <!-- below set of links are not marked by nav why?
+    These links are similar to the links that would present in the footer
+    ie. these links navigate outside of the app. Other information-->
+    <p><a href="news.html">News</a> -
+      <a href="blog.html">Blog</a> -
+      <a href="forums.html">Forums</a></p>
+    <p>Last Modified: <span itemprop="dateModified">2009-04-01</span></p>
+    <nav>
+      <h1>Navigation</h1>
+      <!-- application level links -->
+      <ul>
+        <li><a href="articles.html">Index of all articles</a></li>
+        <li><a href="today.html">Things sheeple need to wake up for today</a></li>
+        <li><a href="successes.html">Sheeple we have managed to wake</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- main with articles -->
+  <main>
+    <!-- article with header / content / footer -->
+    <article itemprop="blogPosts" itemscope itemtype="http://schema.org/BlogPosting">
+      <header>
+        <h1 itemprop="headline">My Day at the Beach</h1>
+      </header>
+      <div itemprop="articleBody">
+        <p>Today I went to the beach and had a lot of fun.</p>
+        ...more content...
+      </div>
+      <footer>
+        <p>Posted <time itemprop="datePublished" datetime="2009-10-10">Thursday</time>.</p>
+      </footer>
+    </article>
+    ...more blog posts...
+  </main>
+  <footer>
+    <p>Copyright ©
+      <span itemprop="copyrightYear">2010</span>
+      <span itemprop="copyrightHolder">The Example Company</span>
+    </p>
+    <!-- outside links not marked by <nav>  -->
+    <p><a href="about.html">About</a> -
+      <a href="policy.html">Privacy Policy</a> -
+      <a href="contact.html">Contact Us</a></p>
+  </footer>
+
+
+  <hr style='margin-top:40px;margin-bottom:40px;'>
+
+  <h1>The Wiki Center Of Exampland</h1>
+  <!-- Primary navigation within the application  -->
+  <nav>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="/events">Current Events</a></li>
+      ...more...
+    </ul>
+  </nav>
+  <main>
+    <header>
+      <h1>Demos in Exampland</h1>
+      <p>Written by A. N. Other.</p>
+    </header>
+    <!-- Secondary navigation around the page/article itself -->
+    <nav>
+      <ul>
+        <li><a href="#public">Public demonstrations</a></li>
+        <li><a href="#destroy">Demolitions</a></li>
+        ...more...
+      </ul>
+    </nav>
+    <!-- Why <div> ?
+    nav section provides navigation to the sections below
+    The sections can be grouped as article.but it should be independent
+    <p> groups phrasing contents. hence as a last resort <div> mark-->
+    <div>
+      <section id="public">
+        <h1>Public demonstrations</h1>
+        <p>...more...</p>
+      </section>
+      <section id="destroy">
+        <h1>Demolitions</h1>
+        <p>...more...</p>
+      </section>
+      ...more...
+    </div>
+    <footer>
+      <p><a href="?edit">Edit</a> | <a href="?delete">Delete</a> | <a href="?Rename">Rename</a></p>
+    </footer>
+  </main>
+  <footer>
+    <p><small>© copyright 1998 Exampland Emperor</small></p>
+  </footer>
+
+
+  <hr style='margin-top:40px;margin-bottom:40px;'>
+
+  <!-- Here the links are not items ie. listed. Links are within a paragraph that
+  explains the navigation across the page-->
+  <nav>
+    <h1>Navigation</h1>
+    <p>You are on my home page. To the north lies <a href="/blog">my
+  blog</a>, from whence the sounds of battle can be heard. To the east you can see a large mountain, upon which many <a href="/school">school papers</a> are littered. Far up thus mountain you can spy a little figure who appears to be me, desperately scribbling
+      a <a href="/school/thesis">thesis</a>.</p>
+    <p>To the west are several exits. One fun-looking exit is labeled <a href="http://games.example.com/">"games"</a>. Another more boring-looking exit is labeled <a href="http://isp.example.net/">ISP™</a>.</p>
+    <p>To the south lies a dark and dank <a href="/about">contacts
+  page</a>. Cobwebs cover its disused entrance, and at one point you see a rat run quickly out of the page.</p>
+  </nav>
+</body>
+
+
+
+
+
+<!--
+Notes:
+<nav>
+represents section of the page that links to other pages or to parts
+within the page
+
+Note:
+- Use list markup <ul> if the nav elements respresents a list
+-	It is common for footers to have a short list of links to various pages of a site,
+	such as the terms of service, the home page, and a copyright page
+	Footer element is alone sufficient for such cases
+- Nav element helps user agents such as screen readers which help blind users
+	to understand/view available pages and navigate across them
+
+Inference:
+Use nav markup section when the links inside them helps to navigate around the application (primary)
+as well it can navigate around the page/aritcle (secondary nav)
+
+<nav> which is a sectioning content can be a child of another sectionning content
+especially <aside>. Similar to <section> inside <article>
+
+ -->
